@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/1_电话拨号器/1_电话拨号器.iml" filepath="$PROJECT_DIR$/1_电话拨号器/1_电话拨号器.iml" />
       <module fileurl="file://$PROJECT_DIR$/2_短信发送器/2_短信发送器.iml" filepath="$PROJECT_DIR$/2_短信发送器/2_短信发送器.iml" />
       <module fileurl="file://$PROJECT_DIR$/3_内部存储/3_内部存储.iml" filepath="$PROJECT_DIR$/3_内部存储/3_内部存储.iml" />
+      <module fileurl="file://$PROJECT_DIR$/4_外部存储/4_外部存储.iml" filepath="$PROJECT_DIR$/4_外部存储/4_外部存储.iml" />
       <module fileurl="file://$PROJECT_DIR$/ITHeima.iml" filepath="$PROJECT_DIR$/ITHeima.iml" />
     </modules>
   </component>

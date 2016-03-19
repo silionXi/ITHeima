@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/1_电话拨号器" />
             <option value="$PROJECT_DIR$/2_短信发送器" />
             <option value="$PROJECT_DIR$/3_内部存储" />
+            <option value="$PROJECT_DIR$/4_外部存储" />
           </set>
         </option>
       </GradleProjectSettings>

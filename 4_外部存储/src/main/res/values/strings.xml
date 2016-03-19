@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">外部存储</string>
+    <string name="account">账号</string>
+    <string name="input_account">请输入账号</string>
+    <string name="password">密码</string>
+    <string name="input_password">请输入密码</string>
+    <string name="remember_account">记住账号和密码</string>
+    <string name="login">登录</string>
+    <string name="login_success">登录成功</string>
+    <string name="sdcard_not_available">SD卡不可用</string>
+</resources>
