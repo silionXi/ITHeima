@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, R.string.login_success, Toast.LENGTH_SHORT).show();
 
                     if (mRememberCheckBox.isChecked()) {
-                        File userFile = new File("data/data/com.silion.itheima.inrom/user.txt");
+                        File userFile = new File(getFilesDir(), "user.txt");
                         FileOutputStream fos = null;
                         try {
                             fos = new FileOutputStream(userFile);
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public String readAccount() {
-        File userFile = new File("data/data/com.silion.itheima.inrom/user.txt");
+        File userFile = new File(getFilesDir(), "user.txt");
         if (userFile.exists()) {
             FileInputStream fis = null;
             try {
