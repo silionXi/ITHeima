@@ -2,11 +2,14 @@ package com.silion.itheima.outrom;
 
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.StatFs;
 import android.support.v7.app.AppCompatActivity;
+import android.text.format.Formatter;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.BufferedReader;
@@ -80,6 +83,8 @@ public class MainActivity extends AppCompatActivity {
                 mRememberCheckBox.setChecked(true);
             }
         }
+
+        sdcardState();
     }
 
     public String readAccount() {
@@ -105,5 +110,23 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         return null;
+    }
+
+    public void sdcardState() {
+        TextView totalSizeTextView = (TextView) findViewById(R.id.totalSizeTextView);
+        TextView availableTextView = (TextView) findViewById(R.id.availableSizeTextView);
+
+        File sdcardFile = Environment.getExternalStorageDirectory();
+        StatFs statFs = new StatFs(sdcardFile.getPath());
+        long blockSize = statFs.getBlockSizeLong();
+        long blockCount = statFs.getBlockCountLong();
+        long freeBlock = statFs.getFreeBlocksLong();
+
+        totalSizeTextView.setText(formatSize(blockSize * blockCount) + "MB");
+        availableTextView.setText(formatSize(blockSize * freeBlock) + "MB");
+    }
+
+    public String formatSize(long size) {
+        return Formatter.formatFileSize(this, size);
     }
 }

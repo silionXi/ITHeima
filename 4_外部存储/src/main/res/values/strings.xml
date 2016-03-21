@@ -8,4 +8,6 @@
     <string name="login">登录</string>
     <string name="login_success">登录成功</string>
     <string name="sdcard_not_available">SD卡不可用</string>
+    <string name="sdcard_total_size">SD卡总空间</string>
+    <string name="sdcard_available_size">SD卡可用空间</string>
 </resources>
